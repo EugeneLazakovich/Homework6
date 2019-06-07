@@ -18,14 +18,10 @@ namespace _6._2
                 {
                     char letter = (char)rnd.Next(0x0061, 0x007A);
                     temp += letter;
-                    if(letter =='a' || letter == 'e' || letter == 'i' || letter == 'o' || letter == 'u' || letter == 'y')
-                    {
-                        continue;
-                    }
-                    else
+                    if(letter !='a' || letter != 'e' || letter != 'i' || letter != 'o' || letter != 'u' || letter != 'y')
                     {
                         count++;
-                    }
+                    }                    
                 }
                 arr[i] = temp;
             }
